@@ -1,0 +1,103 @@
+.pizzaWrapper{
+    display: block;
+    margin: 1rem auto;
+    background: rgba(134, 134, 134, 0.527);
+    border-radius: 30px;
+    padding: 4rem;
+    width: 60%;
+    height: 100%;
+}
+.pizzaTitle{
+    display: block;
+    margin: 0 auto;
+    min-height: 300px;
+    width: 40%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    color:rgb(0, 0, 0);
+    /* -webkit-text-stroke: 0.5px black; */
+    letter-spacing: 4px;
+}
+
+
+.PizzaGrid{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto; 
+    justify-self: center;
+    gap: 10rem; 
+}
+.PizzaGrid > .gridItem:last-child {
+    grid-column: span 3;
+    justify-self: center;
+}
+.gridItem{
+    position: relative;
+    width: 300px; 
+    height: 530px; 
+    background-color: rgba(255, 255, 255, 0.514); 
+    border: 0.5px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.pizzaImage{
+    background-size: cover;
+    margin-top: 30px;
+    width: 250px;
+    height: 180px;
+    border-radius:15px;
+}
+.pizzaUnitTitle{
+    color:black;
+    font-size:30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pizzaVegetarian{
+    color:rgb(2, 71, 33);
+    font-size:20px;
+    font-family: "Send Flowers", cursive;
+}
+.pizzaIsNotVegetarian{
+    color:rgb(95, 6, 6);
+    font-size:20px;
+    font-family: "Send Flowers", cursive; 
+}
+.pizzaDescription{
+    color:black;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px;
+
+}
+.pizzaNutrition{
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+.pizzaNutrition li{
+    color:black;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 3px;
+    text-align: left;
+}
+.pizzaNutrition li:last-child{
+margin-bottom: 5px;
+}
+.pizzaPrice{
+    color:black;
+    font-size:20px;
+    font-family:'Courier New', Courier, monospace
+}
+
+

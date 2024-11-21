@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html{
+  overflow-y: auto;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  min-height: 1000px;
+  background: url("../public/img/restaurant.jpg") center center/cover no-repeat;
+  position: relative;
+  padding-top: 10rem;
+  
+}

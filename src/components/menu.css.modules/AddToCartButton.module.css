@@ -1,0 +1,20 @@
+.addToCartButton{
+    position: absolute;
+    bottom: 30px;
+    left: 6.3rem;
+    color:rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.63);
+    border:0.1px solid black;
+    border-radius:5px;
+    width: 100px;
+    height: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.addToCartButton:hover{
+    background-color: rgba(255, 255, 255, 0.877);
+}
+.addToCartButton:active {  
+    background-color: rgba(255, 255, 255, 0.63);  
+    transform: translateY(1px); /* Перемещение кнопки вниз при нажатии */  
+
+}

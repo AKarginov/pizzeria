@@ -1,0 +1,166 @@
+.woodBack {
+    background: url("../../public/img/background_table.jpg") center center/cover no-repeat;
+    width: 100vw;
+    height: 50rem;
+    margin-top:10rem;
+}
+
+.pizzaWrapper {
+    display: block;
+    width: 40rem;
+    min-width: 100px;
+    height: 40rem;
+    min-height: 100px;
+    margin: 0 auto;
+    
+}
+.texts_Wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.woodBack .rollingPizza {
+    display: block;
+    margin: 0 auto;
+    background: url("../../public/img/pizza_with_shadow.png") center center/cover no-repeat;
+    width: 80%;
+    height: 80%;
+    -webkit-animation: pizzarolling 90s linear infinite;
+    animation: pizzarolling 90s linear infinite
+}
+
+@-webkit-keyframes pizzarolling {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes pizzarolling {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+h2{
+    text-align: center;
+    font-size: 3em;
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    color:beige;
+    -webkit-text-stroke:  black;
+    letter-spacing: 4px; 
+}
+h3.notVisible{
+    margin: 3rem 5rem;
+    display: inline-block;
+    min-height: 300px;
+    width: 35%;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    color:beige;
+    -webkit-text-stroke:  black;
+    letter-spacing: 4px;
+
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition-duration: 1s;
+}
+h3.visible{
+    margin: 3rem 5rem;
+    display: inline-block;
+    min-height: 300px;
+    width: 35%;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    color:beige;
+    -webkit-text-stroke:  black;
+    letter-spacing: 4px;
+    
+    
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 1s;
+
+
+}
+/* Печь */
+.woodOven_Block{
+    background-color: #fff;
+    display: block;
+    background: url("../../public/img/photo/2.jpg") center center/cover no-repeat;
+    height: 1200px;
+
+}
+.woodOven_Block h2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100px;
+    
+}
+
+
+h4.notVisible{
+    margin: 0 auto;
+    display: block;
+    min-height: 250px;
+    width: 50%;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    color:beige;
+    -webkit-text-stroke:  black;
+    letter-spacing: 4px;
+
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition-duration: 1s;
+}
+h4.visible{
+    margin: 5rem auto;
+    display: block;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 15px;
+    min-height: 250px;
+    width: 50%;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    color:rgb(0, 0, 0);
+    -webkit-text-stroke: 0.3px black;
+    letter-spacing: 4px;
+    
+    
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 1s;
+
+
+}

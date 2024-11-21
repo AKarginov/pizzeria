@@ -1,0 +1,33 @@
+/* корзина */
+.cart_icon {
+    max-width:50px;    
+}
+.cart_icon:hover{
+    content: url('../../../public/icons/cart_light.svg');
+    transition: filter 0.3s ease;
+}
+.cart_button {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+.goldenCircle {
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    font-size: 14px; 
+    font-weight: 800;
+    background-color: gold;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.goldenCircle.hidden {
+    display: none;
+}
