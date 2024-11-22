@@ -2,9 +2,8 @@ import { useContext } from "react";
 import styles from "../../components/menu.css.modules/QMB.module.css";
 import { AddedArrayContext } from "../context/AddedArrayContext";
 
-// Кнопка для увеличения количества товара
 export const IncreaseButton = ({ id }) => {
-  const { itemsArray, setItemsArray } = useContext(AddedArrayContext);
+  const {setItemsArray } = useContext(AddedArrayContext);
 
   const handleIncrease = () => {
     setItemsArray((prevItems) =>
@@ -26,9 +25,8 @@ export const IncreaseButton = ({ id }) => {
   );
 };
 
-// Кнопка для уменьшения количества товара
 export const DecreaseButton = ({ id }) => {
-  const { itemsArray, setItemsArray } = useContext(AddedArrayContext);
+  const {setItemsArray } = useContext(AddedArrayContext);
 
   const handleDecrease = () => {
     setItemsArray((prevItems) =>
@@ -38,7 +36,7 @@ export const DecreaseButton = ({ id }) => {
             ? { ...item, quantity: item.quantity - 1 }
             : item
         )
-        .filter((item) => item.quantity > 0) // Удаляем товары с quantity === 0
+        .filter((item) => item.quantity > 0) 
     );
   };
 
@@ -53,9 +51,8 @@ export const DecreaseButton = ({ id }) => {
   );
 };
 
-// Кнопка для полного удаления товара
 export const DeleteAllButton = ({ id }) => {
-  const { itemsArray, setItemsArray } = useContext(AddedArrayContext);
+  const {setItemsArray } = useContext(AddedArrayContext);
 
   const handleDelete = () => {
     setItemsArray((prevItems) =>

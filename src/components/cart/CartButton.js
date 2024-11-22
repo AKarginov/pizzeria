@@ -8,13 +8,13 @@ export const CartButton = () => {
     const toggleMenu = ()=> {
         setAsideVisibility((prev) => !prev)
     }
+
     return (
         <li > 
             <button onClick={toggleMenu} className={styles.cart_button}>
-                <img className={styles.cart_icon} src='../icons/cart_oscure.svg' />
+                <img className={styles.cart_icon} src='../icons/cart_oscure.svg' alt='cart_icon' />
                 <span className={`${styles.goldenCircle} ${incrementCounter === 0? styles.hidden: ''}`}>{incrementCounter}</span>
             </button>
         </li>
     )
 }
-// `${styles.sideWrapper} ${asideVisibility ? styles.open : ""}`

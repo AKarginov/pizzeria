@@ -1,7 +1,6 @@
 import styles from "../components/Main.module.css";
 import { RollingPizzaScroller } from "../components/scrollers/RollingPizzaScroller";
 import {OvenScroller} from "../components/scrollers/OvenScroller";
-import Footer from "../components/Footer";
 export const Home = () => {
 const scrollActivator = RollingPizzaScroller();
 const OvenScrollActivator = OvenScroller();

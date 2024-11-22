@@ -14,7 +14,6 @@ export const CartSideMenu = () => {
 
   const [totalSum, setTotalSum] = useState(0);
 
-  // Обновляем сумму и общее количество товаров
   useEffect(() => {
     const finalResult = itemsArray.reduce(
       (sum, item) => sum + item.quantity * item.price,
@@ -26,7 +25,7 @@ export const CartSideMenu = () => {
       (total, item) => total + item.quantity,
       0
     );
-    setIncrementCounter(totalQuantity); // Обновляем общий счётчик
+    setIncrementCounter(totalQuantity); 
   }, [itemsArray, setIncrementCounter]);
 
   return (

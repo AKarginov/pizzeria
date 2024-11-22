@@ -16,9 +16,6 @@ export const OvenScroller = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', scrollCounter);
-    // return () => {
-    //   window.removeEventListener('scroll', scrollCounter);
-    // };
   }, []);
 
   return ovenScrollerBlock;
